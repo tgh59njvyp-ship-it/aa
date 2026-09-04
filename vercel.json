@@ -1,0 +1,11 @@
+{
+  "buildCommand": "vite build",
+  "installCommand": "npm install --include=dev",
+  "outputDirectory": "dist/public",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/manus-storage/(.*)", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
